@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nocodb-galeria
+    env: node
+    plan: free
+    rootDir: .
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NC_DB
+        value: sqlite
+      - key: NC_DISABLE_TELEMETRY
+        value: true
