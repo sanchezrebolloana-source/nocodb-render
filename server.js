@@ -1,7 +1,8 @@
-const Noco = require("nocodb");
+const { start } = require("nocodb");
 
-Noco({
+start({
   port: process.env.PORT || 8080,
+  host: "0.0.0.0",
 }).then(() => {
-  console.log("NocoDB iniciado correctamente en Render");
+  console.log("NocoDB iniciado correctamente");
 });
