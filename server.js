@@ -1,8 +1,12 @@
 const { start } = require("nocodb");
 
+const PORT = process.env.PORT || 10000;
+
 start({
-  port: process.env.PORT || 8080,
-  host: "0.0.0.0",
+  port: PORT,
+  host: "0.0.0.0"
 }).then(() => {
-  console.log("NocoDB iniciado correctamente");
+  console.log(`NocoDB escuchando en puerto ${PORT}`);
+}).catch(err => {
+  console.error("Error arrancando NocoDB:", err);
 });
