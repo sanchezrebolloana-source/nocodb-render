@@ -6,7 +6,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "nocodb"
+    "start": "npx nocodb"
   },
   "dependencies": {
     "nocodb": "^0.204.0"
