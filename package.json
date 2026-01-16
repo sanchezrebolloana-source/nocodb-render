@@ -1,11 +1,11 @@
 {
   "name": "nocodb-render",
   "version": "1.0.0",
-  "main": "server.js",
+  "private": true,
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "nocodb": "latest"
+    "nocodb": "^0.204.0"
   }
 }
